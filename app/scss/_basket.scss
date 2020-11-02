@@ -1,0 +1,403 @@
+// --------------------------------------------------------------------------------- basket
+
+.basket {
+    padding-top: 175px;
+    padding-bottom: 35px;
+    min-height: 70vh;
+}
+
+// --------------------------------------------------------------------------------- main-title__basket
+
+.main-title__basket {
+    margin-top: 32px;
+}
+
+// --------------------------------------------------------------------------------- basket-quantity
+
+.basket-quantity {
+    margin-top: 60px;
+    border-bottom: 1px solid rgba(193, 185, 174, 0.6);
+    height: 30px;
+    font-family: "Raleway-Regular";
+    font-size: 18px;
+    line-height: 17px;
+    color: #323232;
+}
+
+// --------------------------------------------------------------------------------- basket-elem
+
+.basket-delete {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 24px;
+    height: 24px;
+    opacity: 0.4;
+    background-image: url("../img/basket-close-img.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60% 60%;
+}
+
+.basket-delete:hover {
+    cursor: pointer;
+}
+
+.basket-delete:active {
+    opacity: 0.2;
+}
+
+.basket-elem {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 35px 0;
+    border-bottom: 1px solid rgba(193, 185, 174, 0.6);
+}
+
+.basket-elem-img img {
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.basket-elem-img,
+.basket-elem-title,
+.basket-elem-quantity,
+.basket-elem-price {
+    width: 25%;
+}
+
+.basket-elem-title,
+.basket-elem-price,
+.basket-elem-quantity input[type="text"] {
+    font-family: "Raleway-Regular";
+    font-size: 16px;
+    line-height: 19px;
+    color: #616370;
+}
+
+.basket-elem-title span,
+.basket-elem-price span {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.basket-elem-quantity input[type="text"] {
+    width: 30px;
+    height: 30px;
+    background-color: #e4dbcb;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    float: left;
+}
+
+.quantity-wrap {
+    width: min-content;
+    margin: 0 auto;
+}
+
+.quantity-arrows {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 15px;
+    height: 30px;
+    margin-left: 30px;
+}
+
+.quantity-arrows-elem {
+    width: 100%;
+    height: 49%;
+}
+
+.quantity-arrows-elem:hover {
+    cursor: pointer;
+}
+
+.quantity-arrows-elem:active {
+    opacity: 0.5;
+}
+
+.arrows-elem-up {
+    background-image: url("../img/arrow_up.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.arrows-elem-down {
+    background-image: url("../img/arrow_down.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+// --------------------------------------------------------------------------------- basket-total
+
+.basket-total {
+    margin-top: 45px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.total-false {
+    width: 25%;
+    height: 1px;
+}
+
+.total-price {
+    width: 25%;
+}
+
+.total-price-title,
+.total-price-value {
+    font-family: "Raleway-Regular";
+    font-size: 20px;
+    line-height: 23px;
+    color: #616370;
+}
+
+// --------------------------------------------------------------------------------- order-btn
+
+.order-btn {
+    margin-top: 100px;
+}
+
+.main-input__order-btn {
+    margin: 0 auto;
+}
+
+// --------------------------------------------------------------------------------- basket-form
+
+.basket-form-wrap {
+    padding-top: 70px;
+    padding-bottom: 35px;
+    background-color: #F8F6F2;
+}
+
+.contacts-wrap {
+    border-bottom: 1px solid rgba(193, 185, 174, 0.6);
+    padding-bottom: 45px;
+}
+
+.contacts {
+    width: 100%;
+}
+
+.basket-form-title {
+    font-family: "Raleway-Regular";
+    font-size: 18px;
+    line-height: 17px;
+    color: #323232;
+}
+
+.basket-form-elem {
+    margin-top: 25px;
+}
+
+.basket-form-elem__text,
+.basket-form-elem__textarea {
+    display: block;
+    width: 370px;
+    height: 37px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #C7C7C7;
+    border-radius: 3px;
+    background-color: #fff;
+    opacity: 0.7;
+    font-family: "Raleway-Regular";
+    font-size: 16px;
+    line-height: 19px;
+    color: #323232;
+}
+
+.basket-form-elem__textarea {
+    height: 185px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    resize: none;
+}
+
+.method-wrap {
+    display: flex;
+}
+
+.delivery-method,
+.payment-method {
+    width: 50%;
+}
+
+.delivery-method > *,
+.payment-method > * {
+    max-width: 370px;
+}
+
+.delivery-method,
+.delivery-method-correction__pickup,
+.payment-method {
+    padding-top: 40px;
+}
+
+.delivery-method label,
+.payment-method label {
+    font-family: "Raleway-Regular";
+    font-size: 16px;
+    line-height: 19px;
+    color: #323232;
+}
+
+// --- on/off delivery-method-correction
+
+// .delivery-method-correction__courier-russia {
+//     display: none;
+// }
+
+.delivery-method-correction__courier-moskow {
+    display: none;
+}
+
+.delivery-method-correction__pickup {
+    display: none;
+}
+
+// --------------------------------------------------------------------------------- basket @media
+
+@media(max-width: 1200px) {
+    .basket {
+        padding-top: 170px;
+        padding-bottom: 25px;
+    }
+
+    .order-btn {
+        margin-top: 55px;
+    }
+
+    .basket-form-wrap {
+        padding-bottom: 25px;
+    }
+}
+
+@media(max-width: 992px) {
+    .basket {
+        padding-top: 85px;
+        padding-bottom: 15px;
+    }
+
+    .main-title__basket {
+        margin-top: 16px;
+    }
+
+    .basket-quantity {
+        font-size: 16px;
+    }
+
+    .basket-form-wrap {
+        padding-top: 35px;
+        padding-bottom: 15px;
+    }
+
+    .basket-form-elem__text,
+    .basket-form-elem__textarea {
+        width: 95%;
+        max-width: 370px;
+    }
+}
+
+@media(max-width: 768px) {
+    .basket {
+        padding-top: 80px;
+    }
+
+    .basket-elem {
+        flex-wrap: wrap;
+    }
+
+    .basket-elem-img,
+    .basket-elem-title {
+        width: 100%;
+    }
+
+    .basket-elem-title {
+        margin-bottom: 20px;
+    }
+
+    .basket-elem-quantity,
+    .basket-elem-price {
+        width: 50%;
+    }
+
+    .total-false {
+        display: none;
+    }
+
+    .total-price {
+        width: 100%;
+    }
+
+    .total-price-title,
+    .total-price-value {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .order-btn {
+        margin-top: 40px;
+    }
+
+    .contacts-wrap {
+        padding-bottom: 30px;
+    }
+
+    .method-wrap {
+        display: block;
+    }
+
+    .delivery-method,
+    .delivery-method-correction__pickup,
+    .payment-method {
+        padding-top: 30px;
+    }
+
+    .delivery-method,
+    .payment-method {
+        width: 100%;
+    }
+}
+
+@media(max-width: 576px) {
+    .basket-elem-title,
+    .basket-elem-price,
+    .basket-elem-quantity input[type="text"] {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .total-price-title,
+    .total-price-value {
+        font-size: 16px;
+    }
+
+    .order-btn {
+        margin-top: 35px;
+    }
+
+    .basket-form-title {
+        font-size: 16px;
+    }
+
+    .basket-form-elem__text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .delivery-method label,
+    .payment-method label {
+        font-size: 14px;
+        line-height: 16px;
+    };
+}

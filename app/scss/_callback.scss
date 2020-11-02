@@ -1,0 +1,160 @@
+// --------------------------------------------------------------------------------- callback
+
+.callback {
+    position: relative;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    background: linear-gradient(25deg, rgba(228, 219, 203, 1) 75%, rgba(228, 217, 199, 0.7) 75%);
+}
+
+.callback::after {
+    content: "";
+    position: absolute;
+    width: 99vw;
+    height: 1px;
+    background-color: #fff;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.callback::before {
+    content: "";
+    position: absolute;
+    width: 99vw;
+    height: 1px;
+    background-color: #fff;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+// --------------------------------------------------------------------------------- callback-form
+
+.callback-form {
+    padding-top: 47px;
+}
+
+.callback-form-field {
+    display: flex;
+    justify-content: center;
+}
+
+.callback-form-input {
+    margin-top: 3px;
+    position: relative;
+
+    input[type="tel"],
+    input[type="text"] {
+        width: 370px;
+        height: 37px;
+        margin-top: 6px;
+        padding: 0 16px 0 45px;
+        border: none;
+        border-radius: 3px;
+        background: rgba(255, 255, 255, 0.4);
+        font-family: "Raleway-Regular";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: rgba(30, 30, 30, 0.5);
+        outline: none;
+    }
+}
+
+.callback-form-input__phone-number::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 37px;
+    height: 37px;
+    border-radius: 3px;
+    background-color: #fff;
+    opacity: 0.4;
+    background-image: url("../img/phone.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.callback-form-input__name::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 37px;
+    height: 37px;
+    border-radius: 3px;
+    background-color: #fff;
+    opacity: 0.4;
+    background-image: url("../img/name.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.callback-form-phone-number,
+.callback-form-name {
+    span {
+        display: block;
+        position: relative;
+        font-family: "Raleway-Regular";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+.callback-form-name {
+    margin-left: 30px;
+}
+
+.main-input__callback-form {
+    margin: 50px auto 0;
+}
+
+// --------------------------------------------------------------------------------- callback @media
+
+@media(max-width: 1200px) {
+    .callback-form-input {
+        input[type="tel"],
+        input[type="text"] {
+            width: 350px;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .callback-form-field {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .callback-form-name {
+        margin-left: 0;
+        margin-top: 18px;
+    }
+}
+
+@media(max-width: 576px) {
+    .callback {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+
+    .callback-form-input {
+        input[type="tel"],
+        input[type="text"] {
+            width: 264px;
+        }
+    }
+
+    .callback-form-name {
+        margin-top: 15px;
+    }
+}

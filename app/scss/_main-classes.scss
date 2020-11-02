@@ -1,0 +1,315 @@
+.clear-both {
+    clear: both;
+}
+
+// --------------------------------------------------------------------------------- main-img
+.main-img-elem {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+// --------------------------------------------------------------------------------- main-text
+
+.main-text {
+    p,
+    ul,
+    ol,
+    a,
+    h1,
+    h2,
+    h3,
+    span {
+        padding-top: 35px;
+        font-family: "Raleway-Regular";
+        font-size: 17px;
+        line-height: 24px;
+        color: #323232;
+    }
+
+    a {
+        text-decoration: underline;
+        color: #0000ff;
+    }
+
+    ul li {
+        list-style: inside disc;
+    }
+
+    ol li {
+        list-style: inside decimal;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-family: "Raleway-Bold";
+    }
+
+    h1 {
+        font-size: 23px;
+        line-height: 26px;
+    }
+
+    h2 {
+        font-size: 21px;
+        line-height: 25px;
+    }
+
+    h3 {
+        font-size: 19px;
+    }
+}
+
+// --------------------------------------------------------------------------------- main-title
+
+.main-title {
+    position: relative;
+    overflow: hidden;
+}
+
+.main-title-betony {
+    float: left;
+    width: 28px;
+    height: 28px;
+    background-image: url("../img/callback-title-betony_img.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.main-title-text {
+    position: absolute;
+    overflow: hidden;
+    bottom: -3px;
+    left: 15px;
+    font-family: "PlayfairDisplay-Bold";
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #616370;
+}
+
+// --------------------------------------------------------------------------------- bread-crumb
+
+.bread-crumb {
+    font-family: "Raleway-Regular";
+    font-size: 14px;
+    line-height: 17px;
+    color: #323232;
+    opacity: 0.6;
+}
+
+.bread-crumb li {
+    display: inline-block;
+}
+
+.bread-crumb li:nth-child(n + 2)::before {
+    content: ">";
+    display: inline-block;
+    position: relative;
+    bottom: 1px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+.bread-crumb a:hover {
+    text-decoration: underline;
+}
+
+// --------------------------------------------------------------------------------- to-close-btn
+
+.to-close-btn {
+    position: absolute;
+    z-index: 3;
+    right: 15px;
+    top: 10px;
+    // display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/close-white.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.to-close-btn:active {
+    opacity: 0.5;
+}
+
+// --------------------------------------------------------------------------------- main-input
+
+.main-input {
+    display: block;
+    width: 150px;
+    height: 40px;
+    background-color: #616370;
+    border-radius: 33px;
+    font-family: "Raleway-Regular";
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.main-input:active {
+    background-color: #808396;
+}
+
+// --------------------------------------------------------------------------------- product-card
+
+.product-card-name,
+.product-card-price {
+    font-family: "Raleway-Bold";
+    font-size: 16px;
+    line-height: 19px;
+    color: #323232;
+}
+
+.product-card-category {
+    font-family: "Raleway-Regular";
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(50, 50, 50, 0.7);
+}
+
+.product-card-price {
+    font-family: "Raleway-Regular";
+}
+
+.product-card-basket-btn {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(228, 219, 203, 0.4);
+    border-radius: 2px;
+    cursor: pointer;
+    background-image: url("../img/basket_2.svg");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.product-card-basket-btn:active {
+    opacity: 0.5;
+}
+
+// --------------------------------------------------------------------------------- main-text @media
+
+@media(max-width: 1200px) {
+    .main-text {
+        p,
+        ul,
+        ol,
+        a,
+        h1,
+        h2,
+        h3,
+        span {
+            padding-top: 25px;
+            font-size: 16px;
+            line-height: 21px;
+        }
+
+        h1 {
+            font-size: 22px;
+            line-height: 23px;
+        }
+
+        h2 {
+            font-size: 20px;
+            line-height: 22px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+    }
+
+    .main-title-text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .product-card-name,
+    .product-card-price {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .product-card-price {
+        margin-top: 14px;
+    }
+}
+
+@media(max-width: 992px) {
+    .main-text {
+        p,
+        ul,
+        ol,
+        a,
+        h1,
+        h2,
+        h3,
+        span {
+            padding-top: 15px;
+            font-size: 16px;
+            line-height: 21px;
+        }
+    }
+
+    .product-card-category {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media(max-width: 768px) {
+    .main-text {
+        p,
+        ul,
+        ol,
+        a,
+        h1,
+        h2,
+        h3,
+        span {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        h1 {
+            font-size: 19px;
+            line-height: 20px;
+        }
+
+        h2 {
+            font-size: 18px;
+            line-height: 19px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+    }
+
+    .main-title-text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .product-card-category {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+@media(max-width: 576px) {
+    .product-card-name,
+    .product-card-price {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}

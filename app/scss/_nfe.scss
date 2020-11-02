@@ -1,0 +1,110 @@
+.nfe-page-wrap {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(228, 219, 203, 0.25);
+}
+
+.nfe-page {
+    width: 529px;
+}
+
+.nfe-page-title {
+    margin-bottom: 20px;
+    font-family: "PlayfairDisplay-Bold";
+    font-size: 26px;
+    line-height: 35px;
+    color: #323232;
+    text-align: center;
+}
+
+.nfe-page-href {
+    margin-bottom: 10px;
+    font-family: "Raleway-Regular";
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration-line: underline;
+    color: #0000ff;
+    text-align: center;
+}
+
+.nfe-page-img {
+    width: 529px;
+    height: 324px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.nfe-page-img__nf {
+    background-image: url('../img/image_404.svg');
+}
+
+.nfe-page-img__error {
+    background-image: url('../img/error.svg');
+}
+
+@media(max-width: 1200px) {
+    .nfe-page-title {
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    .nfe-page-href {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .nfe-page {
+        width: 374px;
+    }
+
+    .nfe-page-img {
+        width: 374px;
+        height: 226px;
+    }
+}
+
+@media(max-width: 992px) {
+    .nfe-page-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .nfe-page-href {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .nfe-page {
+        width: 300px;
+    }
+
+    .nfe-page-img {
+        width: 300px;
+        height: 182px;
+    }
+}
+
+@media(max-width: 768px) {
+    .nfe-page-title {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .nfe-page-href {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .nfe-page {
+        width: 214px;
+    }
+
+    .nfe-page-img {
+        width: 214px;
+        height: 130px;
+    }
+}

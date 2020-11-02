@@ -1,0 +1,471 @@
+// --------------------------------------------------------------------------------- header
+
+.header-wrap {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+// --------------------------------------------------------------------------------- header-top
+.header-top {
+    background-color: #e4dbcb;
+}
+
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 7px;
+}
+
+.main-menu-btn {
+    position: absolute;
+    display: none;
+}
+
+.main-logo-img {
+    width: 136px;
+    height: 51px;
+}
+
+.main-mails {
+    font-family: "Raleway-Regular";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(50, 50, 50, 0.6);
+}
+
+.main-socials {
+    li {
+        display: inline-block;
+    }
+
+    a {
+        display: block;
+    }
+
+    .socials-elem {
+        width: 25px;
+        height: 25px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .socials-viber {
+        background-image: url("../img/viber.svg");
+    }
+
+    .socials-whatsapp {
+        background-image: url("../img/whatsapp.svg");
+    }
+
+    .socials-telegram {
+        background-image: url("../img/telegram.svg");
+    }
+}
+
+.main-phones {
+    font-family: "Raleway-Regular";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(50, 50, 50, 0.6);
+
+    .call-back {
+        font-style: italic;
+        font-weight: 300;
+        text-decoration: underline;
+    }
+}
+
+.main-search {
+    position: relative;
+    left: 50px;
+
+    form {
+        display: flex;
+    }
+
+    input[type="search"] {
+        height: 36px;
+        width: 291px;
+        padding-left: 16px;
+        border: none;
+        border-radius: 3px 0 0 3px;
+        background: rgba(255, 255, 255, 0.4);
+        font-family: "Raleway-Regular";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: rgba(30, 30, 30, 0.5);
+        outline: none;
+    }
+
+    input[type="submit"] {
+        width: 36px;
+        height: 36px;
+        background: rgba(255, 255, 255, 0.8);
+        border: none;
+        border-radius: 0 3px 3px 0;
+        background-image: url("../img/search.svg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        outline: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
+    }
+}
+
+.main-basket {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/basket.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.main-basket:active {
+    opacity: 0.5;
+}
+
+// --------------------------------------------------------------------------------- header-nav
+.header-nav {
+    background-color: #f8f6f2;
+}
+
+.to-close-btn {
+    display: none;
+}
+
+.main-nav {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-family: "Raleway-Regular";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #616370;
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    li {
+        display: inline-block;
+
+        &:nth-child(n + 2) {
+            margin-left: 40px;
+        }
+    }
+}
+
+.product-nav {
+    padding-top: 25px;
+    font-family: "Raleway-Regular";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #897d6c;
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    li {
+        display: inline-block;
+
+        &:nth-child(n + 2) {
+            margin-left: 40px;
+        }
+    }
+}
+
+.nav-contacts {
+    display: none;
+}
+
+// --------------------------------------------------------------------------------- header @media
+
+@media(max-width: 1200px) {
+    .main-search {
+        left: 15px;
+    }
+}
+
+@media(max-width: 992px) {
+    .header .container {
+        position: relative;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .main-menu-btn {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        display: block;
+        background-image: url("../img/menu_btn.svg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
+    }
+
+    .main-mails,
+    .main-socials,
+    .main-phones {
+        display: none;
+    }
+
+    .main-search__mobile {
+        position: absolute;
+        right: 0;
+        left: auto;
+
+        input[type="search"] {
+            width: 36px;
+            opacity: 0;
+        }
+
+        input[type="submit"] {
+            background-color: inherit;
+        }
+    }
+
+    .main-basket {
+        position: relative;
+
+        right: 25px;
+    };
+
+    // --------------------------------------------------------------------------------- mobile main search active
+
+    // .main-search__mobile-active {
+    //     input[type="search"] {
+    //         opacity: 1;
+    //         width: 210px;
+    //     }
+
+    //     input[type="submit"] {
+    //         background-color: #616370;
+    //         background-image: url("../img/search-white.svg");
+    //     }
+    // }
+
+    // .main-basket__active-search-mobile {
+    //     right: 240px;
+    // };
+
+    // --------------------------------------------------------------------------------- mobile menu active
+
+    // body {
+    //     overflow: hidden;
+    // }
+
+    // .to-close-btn {
+    //     display: block;
+    // }
+
+    // .header-top__menu-active {
+    //     display: none;
+    // }
+
+    // .header-nav__mobile {
+    //     display: block;
+    //     position: absolute;
+    //     z-index: 5;
+    //     height: 100vh;
+    //     width: 100vw;
+    //     background-color: #616370;
+    // }
+
+    // .main-nav__mobile > ul,
+    // .product-nav__mobile {
+    //     font-style: normal;
+    //     font-weight: 600;
+    //     font-size: 14px;
+    //     line-height: 17px;
+    //     color: rgba(255, 255, 255, 0.8);
+
+    //     li {
+    //         display: block;
+
+    //         &:nth-child(n + 2) {
+    //             margin-left: 0;
+    //         }
+    //     }
+
+    //     a {
+    //         display: flex;
+    //         align-items: center;
+    //         width: 481px;
+    //         height: 39px;
+    //         padding-left: 15px;
+
+    //         &:hover,
+    //         &:active {
+    //             background: rgba(255, 255, 255, 0.05);
+    //             text-decoration: none;
+    //             color: #e4dbcb;
+    //         }
+    //     }
+    // }
+
+    // .main-nav__mobile {
+    //     padding-top: 30px;
+    // }
+
+    // .nav-contacts {
+    //     display: block;
+    //     position: absolute;
+    //     bottom: 0;
+    //     right: 15px;
+    // }
+
+    // .main-socials li:nth-child(n + 2),
+    // .main-phones li:nth-child(n + 2),
+    // .main-mails li:nth-child(n + 2) {
+    //     margin-left: 0;
+    // }
+
+    // .main-mails {
+    //     margin-top: 10px;
+    // }
+
+    // .main-phones li {
+    //     display: block;
+    // }
+
+    // .main-socials__nav-contacts,
+    // .main-phones__nav-contacts,
+    // .main-mails__nav-contacts {
+    //     display: block;
+    //     text-align: right;
+    //     color: rgba(255, 255, 255, 0.6);
+    // }
+
+    // .main-socials__nav-contacts {
+    //     color: rgba(255, 255, 255, 1);
+
+    //     li {
+    //         padding-left: 5px;
+    //     }
+    // }
+
+    // .main-mails__nav-contacts {
+    //     padding-bottom: 20px;
+    // }
+
+    // .main-phones__nav-contacts,
+    // .main-mails__nav-contacts {
+    //     font-family: "Raleway-Regular";
+    //     font-style: normal;
+    //     font-weight: 500;
+    //     font-size: 16px;
+    //     line-height: 19px;
+
+    //     .call-back {
+    //         font-family: "Raleway-Regular";
+    //         font-style: italic;
+    //         font-weight: 300;
+    //         text-decoration-line: underline;
+    //     }
+    // }
+}
+
+// @media(max-width: 768px) {
+//     // --------------------------------------------------------------------------------- mobile main search active
+
+//     .main-search__mobile-active {
+//         input[type="search"] {
+//             width: 420px;
+//         }
+
+//         input[type="submit"] {
+//             background-color: #616370;
+//             background-image: url("../img/search-white.svg");
+//         }
+//     }
+
+//     .main-basket__active-search-mobile {
+//         right: 460px;
+//     }
+
+//     .main-logo__off {
+//         position: relative;
+//         z-index: -1;
+//     };
+
+//     // --------------------------------------------------------------------------------- mobile menu active
+
+//     .nav-contacts {
+//         position: relative;
+//         padding-left: 30px;
+//         padding-top: 60px;
+//     };
+
+//     .main-socials__nav-contacts,
+//     .main-phones__nav-contacts,
+//     .main-mails__nav-contacts {
+//         text-align: left;
+//     }
+// }
+
+// @media(max-width: 576px) {
+//     // --------------------------------------------------------------------------------- mobile main search active
+
+//     .main-logo__off {
+//         display: none;
+//     }
+
+//     .main-basket__off {
+//         display: none;
+//     }
+
+//     .main-menu-btn__off {
+//         display: none;
+//     }
+
+//     .main-search__mobile-active {
+//         position: relative;
+//         right: auto;
+//         width: 100%;
+
+//         input[type="search"] {
+//             width: 450px;
+//             flex-grow: 1;
+//         }
+
+//         input[type="submit"] {
+//             background-color: #616370;
+//             background-image: url("../img/search-white.svg");
+//         }
+//     }
+// }

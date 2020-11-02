@@ -1,0 +1,54 @@
+//--------------------------------------------------------------------------------- footer
+
+.footer {
+   padding-top: 25px;
+   padding-bottom: 42px;
+   font-family: "Raleway-Regular";
+   font-style: normal;
+   font-size: 14px;
+   line-height: 18px;
+   color: #fff;
+   background-color: #616370;
+
+   li {
+      margin-bottom: 5px;
+   }
+
+   a:hover {
+      text-decoration: underline;
+   }
+}
+
+//--------------------------------------------------------------------------------- footer-product-nav
+
+.footer-product-nav {
+   margin-bottom: 11px;
+   color: #e4dbcb;
+   opacity: 0.8;
+}
+
+//--------------------------------------------------------------------------------- footer-nav
+
+.footer-nav {
+   font-style: italic;
+}
+
+//--------------------------------------------------------------------------------- footer-legal
+
+.footer-legal {
+   text-align: right;
+}
+
+//--------------------------------------------------------------------------------- footer @media
+
+@media (max-width: 768px) {
+   .footer {
+      text-align: center;
+      font-size: 12px;
+      line-height: 17px;
+   }
+
+   .footer-legal {
+      text-align: center;
+   }
+}
