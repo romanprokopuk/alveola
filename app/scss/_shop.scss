@@ -63,12 +63,13 @@ $shopInfoHeight: 500px; // .shop-info-wrap,  .shop-info и .tab-content долж
     color: #595959;
 }
 
-.tab:hover {
+.tab:hover,
+.tab.is-show {
     background-color: #e4dbcb40;
     cursor: pointer;
 }
 
-.tab:hover > .tab-content {
+.tab.is-show > .tab-content {
     display: block;
 }
 

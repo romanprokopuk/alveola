@@ -124,6 +124,14 @@
 
 // --------------------------------------------------------------------------------- filter-form
 
+.filter-form-toggle {
+    display: none;
+
+    &.is-show {
+        display: block;
+    }
+}
+
 .filter-form-wrap {
     position: absolute;
     width: 100%;
