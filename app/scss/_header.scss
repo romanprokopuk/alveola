@@ -168,6 +168,8 @@
 // --------------------------------------------------------------------------------- header-nav
 .header-nav {
     background-color: #f8f6f2;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 .to-close-btn {
@@ -175,8 +177,6 @@
 }
 
 .main-nav {
-    padding-top: 7px;
-    padding-bottom: 7px;
     font-family: "Raleway-Regular";
     font-style: normal;
     font-weight: 600;
@@ -291,7 +291,6 @@
 
     .main-basket {
         position: relative;
-
         right: 25px;
     }
 
@@ -409,10 +408,6 @@
     //     }
     // }
 
-    // .main-mails__nav-contacts {
-    //     padding-bottom: 20px;
-    // }
-
     // .main-phones__nav-contacts,
     // .main-mails__nav-contacts {
     //     font-family: "Raleway-Regular";
@@ -430,43 +425,43 @@
     // }
 }
 
-// @media(max-width: 768px) {
-//     // --------------------------------------------------------------------------------- mobile main search active
+@media (max-width: 768px) {
+    // --------------------------------------------------------------------------------- mobile main search active
 
-//     .main-search__mobile-active {
-//         input[type="search"] {
-//             width: 420px;
-//         }
+    // .main-search__mobile-active {
+    //     input[type="search"] {
+    //         width: 420px;
+    //     }
 
-//         input[type="submit"] {
-//             background-color: #616370;
-//             background-image: url("../img/search-white.svg");
-//         }
-//     }
+    //     input[type="submit"] {
+    //         background-color: #616370;
+    //         background-image: url("../img/search-white.svg");
+    //     }
+    // }
 
-//     .main-basket__active-search-mobile {
-//         right: 460px;
-//     }
+    // .main-basket__active-search-mobile {
+    //     right: 460px;
+    // }
 
-//     .main-logo__off {
-//         position: relative;
-//         z-index: -1;
-//     };
+    // .main-logo__off {
+    //     position: relative;
+    //     z-index: -1;
+    // };
 
-//     // --------------------------------------------------------------------------------- mobile menu active
+    // --------------------------------------------------------------------------------- mobile menu active
 
-//     .nav-contacts {
-//         position: relative;
-//         padding-left: 30px;
-//         padding-top: 60px;
-//     };
+    // .nav-contacts {
+    //     position: relative;
+    //     padding-left: 30px;
+    //     padding-top: 60px;
+    // }
 
-//     .main-socials__nav-contacts,
-//     .main-phones__nav-contacts,
-//     .main-mails__nav-contacts {
-//         text-align: left;
-//     }
-// }
+    // .main-socials__nav-contacts,
+    // .main-phones__nav-contacts,
+    // .main-mails__nav-contacts {
+    //     text-align: left;
+    // }
+}
 
 // @media(max-width: 576px) {
 //     // --------------------------------------------------------------------------------- mobile main search active
