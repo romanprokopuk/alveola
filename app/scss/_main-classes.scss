@@ -198,7 +198,7 @@
 
 // --------------------------------------------------------------------------------- main-text @media
 
-@media(max-width: 1200px) {
+@media (max-width: 1200px) {
     .main-text {
         p,
         ul,
@@ -244,7 +244,7 @@
     }
 }
 
-@media(max-width: 992px) {
+@media (max-width: 992px) {
     .main-text {
         p,
         ul,
@@ -266,7 +266,7 @@
     }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     .main-text {
         p,
         ul,
@@ -306,7 +306,7 @@
     }
 }
 
-@media(max-width: 576px) {
+@media (max-width: 576px) {
     .product-card-name,
     .product-card-price {
         font-size: 12px;

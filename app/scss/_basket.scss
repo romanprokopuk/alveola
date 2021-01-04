@@ -176,7 +176,7 @@
 .basket-form-wrap {
     padding-top: 70px;
     padding-bottom: 35px;
-    background-color: #F8F6F2;
+    background-color: #f8f6f2;
 }
 
 .contacts-wrap {
@@ -206,7 +206,7 @@
     height: 37px;
     padding-left: 10px;
     padding-right: 10px;
-    border: 1px solid #C7C7C7;
+    border: 1px solid #c7c7c7;
     border-radius: 3px;
     background-color: #fff;
     opacity: 0.7;
@@ -267,7 +267,7 @@
 
 // --------------------------------------------------------------------------------- basket @media
 
-@media(max-width: 1200px) {
+@media (max-width: 1200px) {
     .basket {
         padding-top: 170px;
         padding-bottom: 25px;
@@ -282,7 +282,7 @@
     }
 }
 
-@media(max-width: 992px) {
+@media (max-width: 992px) {
     .basket {
         padding-top: 85px;
         padding-bottom: 15px;
@@ -308,7 +308,7 @@
     }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     .basket {
         padding-top: 80px;
     }
@@ -369,7 +369,7 @@
     }
 }
 
-@media(max-width: 576px) {
+@media (max-width: 576px) {
     .basket-elem-title,
     .basket-elem-price,
     .basket-elem-quantity input[type="text"] {
@@ -399,5 +399,5 @@
     .payment-method label {
         font-size: 14px;
         line-height: 16px;
-    };
+    }
 }
