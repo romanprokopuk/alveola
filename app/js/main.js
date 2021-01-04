@@ -13,6 +13,18 @@ $(document).ready(function() {
     $('.filter-form-toggle').toggleClass('is-show')
   })
 
+  $('.sort-elem-popularity').on('click', function() {
+    $('.arrow_forward__up-popularity').toggleClass('is_down')
+  })
+
+  $('.sort-elem-price').on('click', function() {
+    $('.arrow_forward__up-price').toggleClass('is_down')
+  })
+
+  $('.sort-elem-name').on('click', function() {
+    $('.arrow_forward__up-name').toggleClass('is_down')
+  })
+
   $('.tabs .tab').on('click', function() {
     $('.tabs .tab').removeClass('is-show')
 

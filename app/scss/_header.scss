@@ -296,21 +296,26 @@
 
     // --------------------------------------------------------------------------------- mobile main search active
 
-    // .main-search__mobile-active {
-    //     input[type="search"] {
-    //         opacity: 1;
-    //         width: 210px;
-    //     }
+    .search-mobile-btn {
+        display: none;
+    }
 
-    //     input[type="submit"] {
-    //         background-color: #616370;
-    //         background-image: url("../img/search-white.svg");
-    //     }
-    // }
+    .main-search__mobile-active {
+        input[type="search"] {
+            opacity: 1;
+            width: 210px;
+        }
 
-    // .main-basket__active-search-mobile {
-    //     right: 240px;
-    // };
+        input[type="submit"] {
+            display: block;
+            background-color: #616370;
+            background-image: url("../img/search-white.svg");
+        }
+    }
+
+    .main-basket__active-search-mobile {
+        right: 240px;
+    }
 
     // --------------------------------------------------------------------------------- mobile main search active
 
@@ -432,25 +437,27 @@
 @media (max-width: 768px) {
     // --------------------------------------------------------------------------------- mobile main search active
 
-    // .main-search__mobile-active {
-    //     input[type="search"] {
-    //         width: 420px;
-    //     }
+    .main-search__mobile-active {
+        input[type="search"] {
+            width: 420px;
+            padding-right: 25px;
+        }
 
-    //     input[type="submit"] {
-    //         background-color: #616370;
-    //         background-image: url("../img/search-white.svg");
-    //     }
-    // }
+        input[type="submit"] {
+            background-color: #616370;
+            background-image: url("../img/search-white.svg");
+            position: relative;
+        }
+    }
 
-    // .main-basket__active-search-mobile {
-    //     right: 460px;
-    // }
+    .main-basket__active-search-mobile {
+        right: 460px;
+    }
 
-    // .main-logo__off {
-    //     position: relative;
-    //     z-index: -1;
-    // };
+    .main-logo__off {
+        position: relative;
+        z-index: -1;
+    }
 
     // --------------------------------------------------------------------------------- mobile main search active
 
@@ -474,33 +481,33 @@
 @media (max-width: 576px) {
     // --------------------------------------------------------------------------------- mobile main search active
 
-    // .main-logo__off {
-    //     display: none;
-    // }
+    .main-logo__off {
+        display: none;
+    }
 
-    // .main-basket__off {
-    //     display: none;
-    // }
+    .main-basket__off {
+        display: none;
+    }
 
-    // .main-menu-btn__off {
-    //     display: none;
-    // }
+    .main-menu-btn__off {
+        display: none;
+    }
 
-    // .main-search__mobile-active {
-    //     position: relative;
-    //     right: auto;
-    //     width: 100%;
+    .main-search__mobile-active {
+        position: relative;
+        right: auto;
+        width: 100%;
 
-    //     input[type="search"] {
-    //         width: 450px;
-    //         flex-grow: 1;
-    //     }
+        input[type="search"] {
+            width: 450px;
+            flex-grow: 1;
+        }
 
-    //     input[type="submit"] {
-    //         background-color: #616370;
-    //         background-image: url("../img/search-white.svg");
-    //     }
-    // }
+        input[type="submit"] {
+            background-color: #616370;
+            background-image: url("../img/search-white.svg");
+        }
+    }
 
     // --------------------------------------------------------------------------------- mobile main search active
 }
