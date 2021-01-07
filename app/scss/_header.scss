@@ -294,220 +294,226 @@
         right: 25px;
     }
 
-    // --------------------------------------------------------------------------------- mobile main search active
-
     .search-mobile-btn {
-        display: none;
-    }
-
-    .main-search__mobile-active {
-        input[type="search"] {
-            opacity: 1;
-            width: 210px;
-        }
-
-        input[type="submit"] {
-            display: block;
-            background-color: #616370;
-            background-image: url("../img/search-white.svg");
+        &.is-toggle {
+            display: none;
         }
     }
 
-    .main-basket__active-search-mobile {
-        right: 240px;
+    .main-search__mobile {
+        &.is-toggle {
+            input[type="search"] {
+                opacity: 1;
+                width: 210px;
+            }
+
+            input[type="submit"] {
+                display: block;
+                background-color: #616370;
+                background-image: url("../img/search-white.svg");
+            }
+        }
     }
 
-    // --------------------------------------------------------------------------------- mobile main search active
+    .main-basket {
+        &.is-active-search-mobile {
+            right: 240px;
+        }
+    }
 
-    // --------------------------------------------------------------------------------- mobile menu active
+    .body {
+        &.is-mobile-menu-toggle {
+            overflow: hidden;
 
-    // body {
-    //     overflow: hidden;
-    // }
+            .to-close-btn {
+                display: block;
+            }
 
-    // .to-close-btn {
-    //     display: block;
-    // }
+            .header-top__menu-active {
+                display: none;
+            }
 
-    // .header-top__menu-active {
-    //     display: none;
-    // }
+            .header-nav__mobile {
+                display: block;
+                position: absolute;
+                z-index: 5;
+                height: 100vh;
+                width: 100vw;
+                background-color: #616370;
+            }
 
-    // .header-nav__mobile {
-    //     display: block;
-    //     position: absolute;
-    //     z-index: 5;
-    //     height: 100vh;
-    //     width: 100vw;
-    //     background-color: #616370;
-    // }
+            .main-nav__mobile > ul,
+            .product-nav__mobile {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: rgba(255, 255, 255, 0.8);
 
-    // .main-nav__mobile > ul,
-    // .product-nav__mobile {
-    //     font-style: normal;
-    //     font-weight: 600;
-    //     font-size: 14px;
-    //     line-height: 17px;
-    //     color: rgba(255, 255, 255, 0.8);
+                li {
+                    display: block;
 
-    //     li {
-    //         display: block;
+                    &:nth-child(n + 2) {
+                        margin-left: 0;
+                    }
+                }
 
-    //         &:nth-child(n + 2) {
-    //             margin-left: 0;
-    //         }
-    //     }
+                a {
+                    display: flex;
+                    align-items: center;
+                    width: 481px;
+                    height: 39px;
+                    padding-left: 15px;
 
-    //     a {
-    //         display: flex;
-    //         align-items: center;
-    //         width: 481px;
-    //         height: 39px;
-    //         padding-left: 15px;
+                    &:hover,
+                    &:active {
+                        background: rgba(255, 255, 255, 0.05);
+                        text-decoration: none;
+                        color: #e4dbcb;
+                    }
+                }
+            }
 
-    //         &:hover,
-    //         &:active {
-    //             background: rgba(255, 255, 255, 0.05);
-    //             text-decoration: none;
-    //             color: #e4dbcb;
-    //         }
-    //     }
-    // }
+            .main-nav__mobile {
+                padding-top: 30px;
+            }
 
-    // .main-nav__mobile {
-    //     padding-top: 30px;
-    // }
+            .nav-contacts {
+                display: block;
+                position: absolute;
+                bottom: 0;
+                right: 15px;
+            }
 
-    // .nav-contacts {
-    //     display: block;
-    //     position: absolute;
-    //     bottom: 0;
-    //     right: 15px;
-    // }
+            .main-socials li:nth-child(n + 2),
+            .main-phones li:nth-child(n + 2),
+            .main-mails li:nth-child(n + 2) {
+                margin-left: 0;
+            }
 
-    // .main-socials li:nth-child(n + 2),
-    // .main-phones li:nth-child(n + 2),
-    // .main-mails li:nth-child(n + 2) {
-    //     margin-left: 0;
-    // }
+            .main-mails {
+                margin-top: 10px;
+            }
 
-    // .main-mails {
-    //     margin-top: 10px;
-    // }
+            .main-phones li {
+                display: block;
+            }
 
-    // .main-phones li {
-    //     display: block;
-    // }
+            .main-socials__nav-contacts,
+            .main-phones__nav-contacts,
+            .main-mails__nav-contacts {
+                display: block;
+                text-align: right;
+                color: rgba(255, 255, 255, 0.6);
+            }
 
-    // .main-socials__nav-contacts,
-    // .main-phones__nav-contacts,
-    // .main-mails__nav-contacts {
-    //     display: block;
-    //     text-align: right;
-    //     color: rgba(255, 255, 255, 0.6);
-    // }
+            .main-socials__nav-contacts {
+                color: rgba(255, 255, 255, 1);
 
-    // .main-socials__nav-contacts {
-    //     color: rgba(255, 255, 255, 1);
+                li {
+                    padding-left: 5px;
+                }
+            }
 
-    //     li {
-    //         padding-left: 5px;
-    //     }
-    // }
+            .main-phones__nav-contacts,
+            .main-mails__nav-contacts {
+                font-family: "Raleway-Regular";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
 
-    // .main-phones__nav-contacts,
-    // .main-mails__nav-contacts {
-    //     font-family: "Raleway-Regular";
-    //     font-style: normal;
-    //     font-weight: 500;
-    //     font-size: 16px;
-    //     line-height: 19px;
-
-    //     .call-back {
-    //         font-family: "Raleway-Regular";
-    //         font-style: italic;
-    //         font-weight: 300;
-    //         text-decoration-line: underline;
-    //     }
-    // }
-
-    // --------------------------------------------------------------------------------- mobile menu active
+                .call-back {
+                    font-family: "Raleway-Regular";
+                    font-style: italic;
+                    font-weight: 300;
+                    text-decoration-line: underline;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
-    // --------------------------------------------------------------------------------- mobile main search active
+    .main-search__mobile {
+        &.is-toggle {
+            input[type="search"] {
+                width: 420px;
+                padding-right: 25px;
+            }
 
-    .main-search__mobile-active {
-        input[type="search"] {
-            width: 420px;
-            padding-right: 25px;
+            input[type="submit"] {
+                background-color: #616370;
+                background-image: url("../img/search-white.svg");
+                position: relative;
+            }
         }
+    }
 
-        input[type="submit"] {
-            background-color: #616370;
-            background-image: url("../img/search-white.svg");
+    .main-basket {
+        &.is-active-search-mobile {
+            right: 460px;
+        }
+    }
+
+    .main-logo {
+        &.is-active-search-mobile {
             position: relative;
+            z-index: -1;
         }
     }
 
-    .main-basket__active-search-mobile {
-        right: 460px;
+    .body {
+        &.is-mobile-menu-toggle {
+            .nav-contacts {
+                position: relative;
+                padding-left: 30px;
+                padding-top: 60px;
+            }
+
+            .main-socials__nav-contacts,
+            .main-phones__nav-contacts,
+            .main-mails__nav-contacts {
+                text-align: left;
+            }
+        }
     }
-
-    .main-logo__off {
-        position: relative;
-        z-index: -1;
-    }
-
-    // --------------------------------------------------------------------------------- mobile main search active
-
-    // --------------------------------------------------------------------------------- mobile menu active
-
-    // .nav-contacts {
-    //     position: relative;
-    //     padding-left: 30px;
-    //     padding-top: 60px;
-    // }
-
-    // .main-socials__nav-contacts,
-    // .main-phones__nav-contacts,
-    // .main-mails__nav-contacts {
-    //     text-align: left;
-    // }
-
-    // --------------------------------------------------------------------------------- mobile menu active
 }
 
 @media (max-width: 576px) {
-    // --------------------------------------------------------------------------------- mobile main search active
-
-    .main-logo__off {
-        display: none;
-    }
-
-    .main-basket__off {
-        display: none;
-    }
-
-    .main-menu-btn__off {
-        display: none;
-    }
-
-    .main-search__mobile-active {
-        position: relative;
-        right: auto;
-        width: 100%;
-
-        input[type="search"] {
-            width: 450px;
-            flex-grow: 1;
-        }
-
-        input[type="submit"] {
-            background-color: #616370;
-            background-image: url("../img/search-white.svg");
+    .main-logo {
+        &.is-active-search-mobile {
+            display: none;
         }
     }
 
-    // --------------------------------------------------------------------------------- mobile main search active
+    .main-basket {
+        &.is-active-search-mobile {
+            display: none;
+        }
+    }
+
+    .main-menu-btn {
+        &.is-active-search-mobile {
+            display: none;
+        }
+    }
+
+    .main-search__mobile {
+        &.is-toggle {
+            position: relative;
+            right: auto;
+            width: 100%;
+
+            input[type="search"] {
+                width: 450px;
+                flex-grow: 1;
+            }
+
+            input[type="submit"] {
+                background-color: #616370;
+                background-image: url("../img/search-white.svg");
+            }
+        }
+    }
 }

@@ -57,7 +57,7 @@
     }
 }
 
-.arrow_forward {
+.arrow-forward {
     position: absolute;
     display: none;
     right: 7px;
@@ -70,12 +70,12 @@
     background-repeat: no-repeat;
 }
 
-.arrow_forward__up-popularity,
-.arrow_forward__up-price,
-.arrow_forward__up-name {
+.arrow-forward-popularity,
+.arrow-forward-price,
+.arrow-forward-name {
     display: block;
 
-    &.is_down {
+    &.is-toggle {
         display: block;
         bottom: 15px;
         transform: rotate(180deg);
@@ -124,7 +124,7 @@
 .filter-form-toggle {
     display: none;
 
-    &.is-show {
+    &.is-toggle {
         display: block;
     }
 }
@@ -316,19 +316,19 @@
         }
     }
 
-    .arrow_forward {
+    .arrow-forward {
         width: 8px;
         height: 8px;
         right: 9px;
         bottom: 11px;
     }
 
-    .arrow_forward__up-popularity,
-    .arrow_forward__up-price,
-    .arrow_forward__up-name {
+    .arrow-forward-popularity,
+    .arrow-forward-price,
+    .arrow-forward-name {
         display: block;
 
-        &.is_down {
+        &.is-toggle {
             bottom: 10px;
         }
     }
