@@ -41,6 +41,10 @@ $(document).ready(function() {
     $('.body').toggleClass('is-mobile-menu-toggle')
   })
 
+  $('.main-input__order-btn').on('click', function() {
+    $('.basket-form-wrap').toggleClass('is-toggle')
+  })
+
   $('.tabs .tab').on('click', function() {
     $('.tabs .tab').removeClass('is-show')
 
