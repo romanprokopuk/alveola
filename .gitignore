@@ -145,3 +145,5 @@ dist
 
 #
 designe/
+.package-lock
+.package
