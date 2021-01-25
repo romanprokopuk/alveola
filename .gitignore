@@ -1,3 +1,4 @@
+
 # Created by https://www.toptal.com/developers/gitignore/api/macos,node
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,node
 
@@ -85,6 +86,9 @@ typings/
 
 # Optional eslint cache
 .eslintcache
+
+# Optional stylelint cache
+.stylelintcache
 
 # Microbundle cache
 .rpt2_cache/
