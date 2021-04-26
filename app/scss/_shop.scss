@@ -81,6 +81,7 @@ $shopInfoHeight: 500px; // .shop-info-wrap,  .shop-info и .tab-content долж
     left: 0;
     bottom: 0;
     top: 100%;
+    cursor: auto;
 }
 
 .content-img {
@@ -116,7 +117,7 @@ $shopInfoHeight: 500px; // .shop-info-wrap,  .shop-info и .tab-content долж
 
 // --------------------------------------------------------------------------------- shop @media
 
-@media(max-width: 1200px) {
+@media (max-width: 1200px) {
     .shop {
         padding-top: 170px;
         padding-bottom: 25px;
@@ -133,7 +134,7 @@ $shopInfoHeight: 500px; // .shop-info-wrap,  .shop-info и .tab-content долж
     }
 }
 
-@media(max-width: 992px) {
+@media (max-width: 992px) {
     .shop {
         padding-top: 85px;
         padding-bottom: 15px;
@@ -158,7 +159,7 @@ $shopInfoHeight: 500px; // .shop-info-wrap,  .shop-info и .tab-content долж
     }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     .shop {
         padding-top: 80px;
     }
@@ -182,7 +183,7 @@ $shopInfoHeight: 500px; // .shop-info-wrap,  .shop-info и .tab-content долж
     }
 }
 
-@media(max-width: 576px) {
+@media (max-width: 576px) {
     .shop-contant {
         padding-top: 55px;
     }

@@ -193,7 +193,7 @@
 }
 
 .basket-form-title {
-    font-family: "Raleway-Regular";
+    font-family: "Raleway-Bold";
     font-size: 18px;
     line-height: 17px;
     color: #323232;
@@ -227,6 +227,14 @@
     resize: none;
 }
 
+.basket-form-elem__checkbox {
+    cursor: pointer;
+}
+
+.basket-form-elem__checkbox:focus + label {
+    text-decoration: underline;
+}
+
 .method-wrap {
     display: flex;
 }
@@ -253,6 +261,7 @@
     font-size: 16px;
     line-height: 19px;
     color: #323232;
+    cursor: pointer;
 }
 
 // --- on/off delivery-method-correction
@@ -266,7 +275,7 @@
 }
 
 .delivery-method-correction__pickup {
-    display: none;
+    display: block;
 }
 
 // --- on/off delivery-method-correction
