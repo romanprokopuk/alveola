@@ -131,6 +131,10 @@
     padding-top: 0;
 }
 
+.description-text *:nth-child(n + 2) {
+    padding-top: 12px;
+}
+
 // --------------------------------------------------------------------------------- main-gallery
 
 .main-gallery {
