@@ -85,7 +85,7 @@
 
 .main-search {
     position: relative;
-    left: 50px;
+    left: 35px;
 
     form {
         display: flex;
@@ -228,7 +228,7 @@
 
 @media (max-width: 1200px) {
     .main-search {
-        left: 15px;
+        left: 3px;
     }
 }
 
@@ -452,7 +452,7 @@
 
     .main-basket {
         &.is-active-search-mobile {
-            right: 460px;
+            right: 450px;
         }
     }
 
